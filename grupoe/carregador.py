@@ -36,7 +36,7 @@ def connect_db():
     con = psycopg2.connect(
         dbname=DATABASE,
         user=USER,
-        host='',
+        host=HOST,
         password=PASSWORD)
     return con
 
