@@ -10,10 +10,11 @@ import psycopg2
 from psycopg2 import OperationalError, sql
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
-DATABASE = os.getenv('DATABASE', 'covid19_casos_brasil')
-USER = os.getenv('USER', 'user_name')
-HOST = os.getenv('HOST', 'localhost')
-PASSWORD = os.getenv('PASSWORD', 'user_password')
+DATABASE = 'covid19_casos_brasil'
+USER = 'postgres'
+HOST = 'localhost'
+PASSWORD = '123'
+
 TABLES = [
     {'name': 'city',
      'sql': 'CREATE TABLE city('

@@ -7,10 +7,10 @@ import pandas as pd
 import psycopg2
 from psycopg2 import sql
 
-DATABASE = os.getenv('DATABASE', 'covid19_casos_brasil')
-USER = os.getenv('USER', 'user_name')
-HOST = os.getenv('HOST', 'localhost')
-PASSWORD = os.getenv('PASSWORD', 'user_password')
+DATABASE = 'covid19_casos_brasil'
+USER = 'postgres'
+HOST = 'localhost'
+PASSWORD = '123'
 
 ESTADOS = ['SP', 'ES', 'PR']
 CIDADES = ['São Paulo', 'Guarapari', 'Dois Vizinhos', 'Piracicaba', 'Curitiba']
