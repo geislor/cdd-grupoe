@@ -10,7 +10,7 @@ import psycopg2
 from psycopg2 import OperationalError, sql
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
-DATABASE = 'covid19_casos_brasil'
+DATABASE = 'grupo_e'
 USER = 'postgres'
 HOST = 'localhost'
 PASSWORD = '123'
