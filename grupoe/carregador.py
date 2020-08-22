@@ -15,7 +15,7 @@ PASSWORD = '123'
 ESTADOS = ['SP', 'ES', 'PR']
 CIDADES = ['São Paulo', 'Guarapari', 'Dois Vizinhos', 'Piracicaba', 'Curitiba']
 
-CASOS_COVID19 = pd.read_csv("dados_covid.csv")
+CASOS_COVID19 = pd.read_csv("dados/dados_covid.csv")
 
 FILTRO_CIDADES = (CASOS_COVID19['state'].isin(ESTADOS)) & \
                  (CASOS_COVID19['place_type'] == 'city') & \
