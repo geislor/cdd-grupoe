@@ -4,6 +4,8 @@ Executa queries no banco de dados e plota gráficos
 import pandas as pd
 import psycopg2
 from psycopg2 import sql
+import matplotlib.pyplot as plt
+
 
 DATABASE = 'grupo_e'
 USER = 'postgres'
@@ -32,7 +34,13 @@ def search(query):
     return cur.fetchall()
 
 
-if __name__ == "__main__":
-    query = "SELECT * from city;"
-
+def plot_test():
+    query = "SELECT cases.last_available_deaths from cases;"
     response = search(query)
+    dataframe = pd.DataFrame(response)
+    return dataframe
+
+
+if __name__ == "__main__":
+    dataframe = plot_test()
+    pass
